@@ -38,9 +38,9 @@ defmodule MeetoTest do
       assert {:ok, command} = Meeto.Commands.ScheduleMeetup.new(valid)
     end
 
-    # test "returns schedule meetup ecto changeset with form: true", %{valid: valid} do
-    #   assert {:ok, %Ecto.Changeset{} = changeset_command} = Meeto.Commands.ScheduleMeetup.new(valid, form: true)
-    # end
+    test "returns schedule meetup ecto changeset with form: true", %{valid: valid} do
+      assert {:ok, %Ecto.Changeset{} = changeset_command} = Meeto.Commands.ScheduleMeetup.new(valid, form: true)
+    end
   end
 
 
