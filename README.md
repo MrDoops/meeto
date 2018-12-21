@@ -1,6 +1,6 @@
 # Meeto
 
-**TODO: Add description**
+Example application for using embedded schemas for command validation.
 
 ## Installation
 

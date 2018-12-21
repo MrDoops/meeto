@@ -8,7 +8,7 @@ defmodule MeetoTest do
     setup _ do
       valid = %{
         "group_id" => "utah-elixir",
-        "host" => %{"person" => %{"first_name" => "Mark", "last_name" => "Eriksen"}},
+        "host" => %{"first_name" => "Mark", "last_name" => "Eriksen"},
         "event" => %{
           "name" => "Nerves LED displays & Clustering Elixir in Kubernetes",
           "description" => "test description",
@@ -16,9 +16,9 @@ defmodule MeetoTest do
           "end_time"   => DateTime.utc_now |> DateTime.to_iso8601,
         },
         "presenters" => [
-          %{"person" => %{"first_name" => "Zack", "last_name" => "White"}},
-          %{"person" => %{"first_name" => "Michael", "last_name" => "Ries"}},
-          %{"person" => %{"first_name" => "Cody", "last_name" => "Poll"}},
+          %{"presenter" => %{"person" => %{"first_name" => "Zack", "last_name" => "White"}}},
+          %{"presenter" => %{"person" => %{"first_name" => "Michael", "last_name" => "Ries"}}},
+          %{"presenter" => %{"person" => %{"first_name" => "Cody", "last_name" => "Poll"}}},
         ]
       }
 

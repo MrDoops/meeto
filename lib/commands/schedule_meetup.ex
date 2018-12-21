@@ -43,6 +43,6 @@ defmodule Meeto.Commands.ScheduleMeetup do
     |> cast(params, [:group_id])
     |> cast_embed(:host, required: true)
     |> cast_embed(:event, required: true)
-    |> cast_assoc(:presenters, required: true)
+    |> cast_assoc(:presenters, required: true, with: &Presenter.changeset/2)
   end
 end
